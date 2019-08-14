@@ -1,8 +1,17 @@
+// import basic components and fonts
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,600,700&display=swap');
 
+// vars
+$bg-pink: #ffddd5;
+$bg-black: #0d1013;
+$gray: #626262;
+
+//body styles 
 
 body {
-    background-color: rgb(206, 131, 131);
-    color: #fff;
-    font-size: 18px;
+    font-size: 14px;
 }
+
+// import scss modules
+@import './modules/header.scss'
