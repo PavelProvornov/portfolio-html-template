@@ -11,7 +11,18 @@ $gray: #626262;
 
 body {
     font-size: 14px;
+
+    .app {
+        height: 100%;
+        overflow: hidden;
+    }
 }
 
+
+
+
+
 // import scss modules
-@import './modules/header.scss'
+@import './modules/header.scss';
+@import './modules/section-first.scss';
+@import './modules/second-section.scss';

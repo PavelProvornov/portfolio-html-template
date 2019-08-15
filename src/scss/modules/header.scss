@@ -105,6 +105,12 @@
             border-top: 4px solid #fff;
             box-sizing: border-box;
             border-bottom: 4px solid #fff;
+            transition: .4s;
+
+            &:hover {
+                border-top: 4px solid #000;
+                border-bottom: 4px solid #000;
+            }
 
             .menu-btn {
                 color: #ffffff;
@@ -115,6 +121,11 @@
                 letter-spacing: 1.5px;
                 mix-blend-mode: difference;
                 position: relative;
+                transition: .4s;
+            }
+
+            &:hover .menu-btn {
+                color: #000;
             }
         }
     }
