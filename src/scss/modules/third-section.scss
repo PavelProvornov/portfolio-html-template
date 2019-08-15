@@ -1,0 +1,92 @@
+.container-wide {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 100px 0;
+
+    .section-title-left {
+        text-align: left;
+        position: relative;
+        font-family: 'Raleway', sans-serif;
+        font-size: 3.7rem;
+        font-weight: 700;
+        line-height: 48px;
+        margin-bottom: 100px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -30px;
+            width: 80px;
+            height: 2px;
+            background-color: #000;
+        }
+    }
+
+    .grid-table {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        border: 1px solid #dcdcdc;
+        grid-gap: 1px;
+        background-color: #dcdcdc;
+
+        &--item {
+            padding: 50px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .table-item-title {
+                font-family: "Raleway", sans-serif;
+                font-size: 1.9rem;
+                font-weight: 700;
+                line-height: 48px;
+                text-transform: uppercase;
+            }
+
+            .table-item-text-content {
+                font-family: "Raleway", sans-serif;
+                font-weight: 500;
+                line-height: 30px;
+                font-size: 1.3rem;
+            }
+
+            .table-item-author {
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+                font-style: italic;
+                line-height: 30px;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .btn-aligner-center {
+        width: 100%;
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+
+        .show-more-reasons-btn {
+            padding: 20px 40px;
+            border: 2px solid #000000;
+            background-color: #fff;
+            border-radius: 4px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            line-height: 30px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            transition: .4s;
+
+            &:hover {
+                background-color: #000000;
+                color: #fff;
+            }
+        }
+    }
+}
