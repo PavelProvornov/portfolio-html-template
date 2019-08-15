@@ -7298,7 +7298,7 @@ body {
     .container-wide .btn-aligner-center .show-more-reasons-btn {
       padding: 20px 40px;
       border: 2px solid #000000;
-      background-color: #fff;
+      background-color: transparent;
       border-radius: 4px;
       font-family: 'Montserrat', sans-serif;
       font-size: 1.3rem;
@@ -7310,3 +7310,38 @@ body {
       .container-wide .btn-aligner-center .show-more-reasons-btn:hover {
         background-color: #000000;
         color: #fff; }
+
+.section-wide-image-container {
+  width: 100%;
+  background-color: #0b1333;
+  background-image: url("../assets/img/img-fw.png");
+  background-position: center;
+  background-size: cover; }
+  .section-wide-image-container .inner-content {
+    margin: 0 auto;
+    padding: 120px 0;
+    width: 100%;
+    max-width: 800px; }
+    .section-wide-image-container .inner-content .wide-image-content-quote {
+      color: #ffffff;
+      font-size: 3.5rem;
+      font-family: "Raleway", sans-serif;
+      font-weight: 700;
+      text-align: center; }
+    .section-wide-image-container .inner-content .quote-sourse {
+      margin-top: 60px;
+      font-family: "Raleway", sans-serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      text-align: center;
+      color: #ffffff; }
+      .section-wide-image-container .inner-content .quote-sourse a {
+        color: #ffffff;
+        text-decoration: underline; }
+        .section-wide-image-container .inner-content .quote-sourse a:hover {
+          color: #11176b; }
+        .section-wide-image-container .inner-content .quote-sourse a:visited {
+          color: #fff; }
+
+.bg-blue {
+  background-color: #eaeef1; }
