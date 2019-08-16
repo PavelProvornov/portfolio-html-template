@@ -23,6 +23,31 @@
             font-weight: 400;
             letter-spacing: 2.4px;
             margin-bottom: 0.9rem;
+
+            &__link {
+                position: relative;
+                text-decoration: none;
+                color: #000000;
+
+                &:hover {
+                    color: #000;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    width: 0px;
+                    height: 2px;
+                    background-color: #000000;
+                    transition: .4s all ease;
+                }
+
+                &:hover:after {
+                    width: 100%;
+                }
+            }
         }
     }
 

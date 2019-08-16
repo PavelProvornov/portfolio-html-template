@@ -7450,6 +7450,23 @@ body {
       font-weight: 400;
       letter-spacing: 2.4px;
       margin-bottom: 0.9rem; }
+      .footer-col .footer-menu-item__link {
+        position: relative;
+        text-decoration: none;
+        color: #000000; }
+        .footer-col .footer-menu-item__link:hover {
+          color: #000; }
+        .footer-col .footer-menu-item__link:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          width: 0px;
+          height: 2px;
+          background-color: #000000;
+          transition: .4s all ease; }
+        .footer-col .footer-menu-item__link:hover:after {
+          width: 100%; }
   .footer-col .footer-contacts {
     font-size: 1rem;
     font-family: "Montserrat", sans-serif;
