@@ -33,7 +33,7 @@
         background-color: #dcdcdc;
 
         &--item {
-            padding: 50px;
+            padding: 40px 50px;
             background-color: #fff;
             display: flex;
             flex-direction: column;
@@ -52,6 +52,7 @@
                 font-weight: 500;
                 line-height: 30px;
                 font-size: 1.3rem;
+                margin: 0;
             }
 
             .table-item-author {
@@ -60,6 +61,7 @@
                 font-style: italic;
                 line-height: 30px;
                 font-size: 1.3rem;
+                margin: 0;
             }
         }
     }

@@ -1,5 +1,114 @@
 .bg-blue {
     background-color: #eaeef1;
 
+    .posters-container {
+        min-height: 90vh;
+        display: grid;
+        grid-template-areas:
+            "first-poster second-poster second-poster"
+            "first-poster third-poster fourth-poster";
+        grid-template-columns: 45% 1fr 1fr;
+        grid-template-rows: minmax(240px, 1fr) minmax(220px, 1fr);
+        grid-gap: 50px;
 
+        .poster-body {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 2px 100px rgba(0, 0, 0, 0.43);
+            z-index: 2;
+
+            .poster-body--image {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: block;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+        }
+
+        .poster-first {
+            display: flex;
+            flex-direction: column;
+            grid-area: first-poster;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+            position: relative;
+
+            .poster-title {
+                text-align: center;
+                color: #ffffff;
+                font-family: "Raleway", sans-serif;
+                font-size: 3.5rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                white-space: pre-line;
+            }
+        }
+
+        .poster-second {
+            display: flex;
+            flex-direction: column;
+            grid-area: second-poster;
+
+            .poster-title {
+                width: 40%;
+                margin-top: 10%;
+                margin-left: 15%;
+                font-family: "Times New Roman", serif;
+                font-style: italic;
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+
+            .post-author {
+                width: 40%;
+                margin-left: 15%;
+                font-size: 1rem;
+                font-family: 'Georgia', serif;
+                font-weight: 400;
+            }
+
+        }
+
+        .poster-third {
+            display: flex;
+            justify-content: center;
+            grid-area: third-poster;
+
+            .poster-title {
+                text-align: center;
+                white-space: pre-line;
+                font-family: "raleway", sans-serif;
+                font-size: 2rem;
+                font-weight: 700;
+            }
+
+        }
+
+        .poster-fourth {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-area: fourth-poster;
+
+            .poster-title {
+                color: #fff;
+                text-align: center;
+                white-space: pre-line;
+                font-family: "raleway", sans-serif;
+                font-size: 2rem;
+                font-weight: 700;
+            }
+
+        }
+
+    }
 }
